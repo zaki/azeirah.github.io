@@ -8,7 +8,7 @@
       identifier,
       
       grooveshark = function () {
-        var song = $("#now-playing-metadata").text(),
+        var song =$("#now-playing-metadata .artist").text() + " - " + $("#now-playing-metadata .song").text(),
             title = "Grooveshark - " + song;
         return {
             song: song,
